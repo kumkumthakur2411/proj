@@ -1,0 +1,9 @@
+<a *ngIf="country" [routerLink]= "'/' + country.name" >
+    <div class="card-item">
+        <img [src]="country.flag" class="card-image">
+        <div class="card-content">
+            <h6 class="title">{{country.name}}</h6>
+        </div>
+
+    </div>
+</a>

@@ -1,0 +1,21 @@
+
+
+<div class="container mt-5">
+    
+<div class="d-flex mb-5 search-filter">
+    <input type="text" placeholder="explore the country detail"
+    [(ngModel)]="searchFilter"
+    />
+</div>
+    <div class="cards">
+        <app-country-card  *ngFor="let country of countries "
+        
+      [country]="country">
+          
+        </app-country-card>
+    </div>
+</div>
+
+ 
+
+
